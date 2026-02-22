@@ -86,23 +86,23 @@ Die GUI lädt beim Start automatisch das Modell aus `models/base_M/`. Nach dem H
 ```
 ├── backend/
 │   ├── classification/
-│   │   ├── dataset.py          # Datenlader (MsgPack & FiveCrop)
-│   │   ├── train_base.py       # MultiPartitioningClassifier (PyTorch Lightning)
-│   │   ├── inference.py        # Inference auf Bildordner
-│   │   ├── test.py             # Evaluation auf Testsets
-│   │   ├── s2_utils.py         # S2 Zell-Partitionierungen
-│   │   └── utils_global.py     # Hilfsfunktionen
+│   │   ├── dataset.py          
+│   │   ├── train_base.py       
+│   │   ├── inference.py        
+│   │   ├── test.py             
+│   │   ├── s2_utils.py         
+│   │   └── utils_global.py    
 │   ├── config/
-│   │   └── baseM.yml           # Trainings-Konfiguration
+│   │   └── baseM.yml           
 │   └── partitioning/
-│       ├── assign_classes.py   # Zell-Labels zu Bildern zuweisen
-│       └── create_cells.py     # S2-Partitionierungen erstellen
+│       ├── assign_classes.py   
+│       └── create_cells.py     
 ├── frontend/
-│   └── gui.py                  # Grafische Oberfläche (PyQt6 + Folium)
-├── data_download.py            # Bilder von AWS S3 herunterladen
-├── environment.yml             # Conda-Umgebung
-├── requirements.txt            # pip-Abhängigkeiten
-├── scene_M_p_im2gps.csv        # Evaluations-Metadaten
+│   └── gui.py                  
+├── data_download.py            
+├── environment.yml             
+├── requirements.txt           
+├── scene_M_p_im2gps.csv        
 ├── .gitignore
 └── README.md
 ```
