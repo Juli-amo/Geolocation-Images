@@ -24,6 +24,7 @@ Dieses Projekt implementiert ein hierarchisches Klassifikationssystem zur Geolok
 
 Im Gegensatz zu herkömmlichen Retrieval-Ansätzen, die eine riesige Referenzdatenbank benötigen, reicht hier ein einziges trainiertes CNN-Modell zur Vorhersage.
 
+<img width="2074" height="1532" alt="Image" src="https://github.com/user-attachments/assets/0119c1b0-ac5e-449d-91b3-65d95a2b792b" />
 ---
 
 ## Wie es funktioniert
@@ -37,6 +38,8 @@ Die Erde ist in drei Partitionierungen aufgeteilt:
 | Coarse | ~1.000 | Kontinent / Großregion |
 | Middle | ~2.000 | Land / Großstadt |
 | Fine | ~5.000 | Stadt / Region |
+
+<img width="392" height="156" alt="Image" src="https://github.com/user-attachments/assets/549d7585-56d9-4488-8217-4631fd7e7673" />
 
 Für jedes Eingabebild werden **5 Crops** (FiveCrop) erzeugt, durch das Modell geleitet und die Ergebnisse gemittelt. Die finale Koordinate wird über die Hierarchie-Vorhersage bestimmt.
 
